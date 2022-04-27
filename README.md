@@ -79,12 +79,16 @@ You'll need [Git](https://git-scm.com) and [composer](https://getcomposer.org/do
    ```sh
    git clone https://github.com/OxMohsen/pass-generator-webbot.git
    ```
-3. Install composer packages
+3. Move to the directory
+```sh
+cd pass-generator-webbot
+```
+4. Install composer packages
    ```sh
    composer install
    ```
-4. change the data in `Config.php`.
-5. set the webhook.
+5. change the data in `Config.php`.
+6. set the webhook.
 - `http://example.com/TgBot.php?s=SUPPER_SECRET_TEXT&a=set`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
