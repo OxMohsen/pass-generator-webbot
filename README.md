@@ -80,9 +80,9 @@ You'll need [Git](https://git-scm.com) and [composer](https://getcomposer.org/do
    git clone https://github.com/OxMohsen/pass-generator-webbot.git
    ```
 3. Move to the directory
-```sh
-cd pass-generator-webbot
-```
+   ```sh
+   cd pass-generator-webbot
+   ```
 4. Install composer packages
    ```sh
    composer install
