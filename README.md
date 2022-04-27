@@ -137,5 +137,5 @@ Project Link: [https://github.com/OxMohsen/pass-generator-webbot](https://github
 [issues-shield]: https://img.shields.io/github/issues/OxMohsen/pass-generator-webbot.svg?style=for-the-badge
 [issues-url]: https://github.com/OxMohsen/pass-generator-webbot/issues
 [license-shield]: https://img.shields.io/github/license/OxMohsen/pass-generator-webbot.svg?style=for-the-badge
-[license-url]: https://github.com/OxMohsen/pass-generator-webbot/blob/master/LICENSE.txt
+[license-url]: https://github.com/OxMohsen/pass-generator-webbot/blob/master/LICENSE
 [product-screenshot]: screenshot.jpg
