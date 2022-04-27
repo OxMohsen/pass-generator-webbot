@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Password Generator - OxMohsen</title>
+  <meta name="description" content="Telegram web bot that generate random password">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mohsen Falakedin">
+
+  <meta property="og:title" content="Password Generator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./">
+  <meta property="og:image" content="./icon.png">
+
+  <link rel="apple-touch-icon" href="./icon.png">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="./js/vendor/telegram-web-app.js"></script>
+  <script>
+    function setThemeClass() {
+      document.documentElement.className = Telegram.WebApp.colorScheme;
+    }
+    Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+    setThemeClass();
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 class="title">Password Generator</h2>
+    <div class="result">
+      <div class="result__title field-title">Generated Password</div>
+      <div class="result__info right">click to copy</div>
+      <div class="result__info left">copied</div>
+      <div class="result__viewbox" id="result">CLICK GENERATE</div>
+      <button id="copy-btn" style="--x: 0; --y: 0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><path d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"/></svg>
+      </button>
+    </div>
+    <div class="length range__slider" data-min="4" data-max="32">
+      <div class="length__title field-title" data-length='0'>length:</div>
+      <input id="slider" type="range" min="4" max="32" value="16" />
+    </div>
+
+    <div class="settings">
+      <span class="settings__title field-title">settings</span>
+      <div class="setting">
+        <input type="checkbox" id="uppercase" checked />
+        <label for="uppercase">Include Uppercase</label>
+      </div>
+      <div class="setting">
+        <input type="checkbox" id="lowercase" checked />
+        <label for="lowercase">Include Lowercase</label>
+      </div>
+      <div class="setting">
+        <input type="checkbox" id="number" checked />
+        <label for="number">Include Numbers</label>
+      </div>
+      <div class="setting">
+        <input type="checkbox" id="symbol" />
+        <label for="symbol">Include Symbols</label>
+      </div>
+    </div>
+
+    <button class="btn generate" id="generate">Generate Password</button>
+  </div>
+
+  <script src="./js/vendor/jquery.min.js"></script>
+  <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="./js/plugins.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

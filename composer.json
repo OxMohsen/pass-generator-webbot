@@ -1,0 +1,22 @@
+{
+    "name": "oxmohsen/pass-generator-webbot",
+    "description": "Telegram web bot that generate random password",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.3",
+        "php-telegram-bot/telegram-bot-manager": "^1.7.0",
+        "longman/telegram-bot": "0.77.1 as 0.73"
+    },
+    "autoload": {
+        "psr-4": {
+            "OxMohsen\\TgBot\\": "src/"
+        },
+        "files": ["Config.php"]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"copy('Config-example.php', 'Config.php');\""
+        ]
+    }
+}
